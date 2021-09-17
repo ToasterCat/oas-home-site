@@ -1,0 +1,26 @@
+/**
+ * Mobile / Vertical
+ */
+@media all and (max-width: 800px) {
+    /* header */
+    .header {
+        height: 50px;
+    }
+    .header-full-name {
+        display: none;
+    }
+    
+    /* footer */
+    .footer {
+        height: 50px;
+    }
+    .footer-links {
+        display: none;
+    }
+
+    /* features */
+    .button {
+        margin: 10px 20px;
+        padding: 20px;
+    }
+}

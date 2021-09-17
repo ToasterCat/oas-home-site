@@ -1,0 +1,25 @@
+/** 
+ * Desktop / Horizontal
+ */
+@media all and (min-width: 800px) {
+    .header {
+        height: 7rem;
+    }
+    .header-short-name {
+        display: none;
+    }
+    
+    .footer {
+        height: 5rem;
+    }
+
+    .button {
+        margin: 10px 10px;
+        padding: 10px 20px;
+
+        transition: border 0.25s, padding 0.25s;
+    }
+    .button:hover {
+        border: 2px solid white;
+    }
+}
