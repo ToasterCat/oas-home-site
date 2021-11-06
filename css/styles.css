@@ -15,7 +15,7 @@ body {
     width: 100%;
     height: 100%;
     
-    # Font
+    /* Font */
     font-family: "Roboto";
     color: lightgray;
     font-size: 15px;
@@ -112,23 +112,43 @@ body {
 /**
  * Core Sections
  */
-.section-header{
-    height: 2rem;
-        
-	background-color: rgb(32, 32, 32);
-    border-radius: 5px;
-    
-}
 .section {
     width: 500px;
+    margin: 2rem;
+
+    background-color: rgba(16,16,16, .8);
     
     display: flex;
     flex-direction: column;
     
-    border: 5px, lightgray;
+    border: 5px, black;
     border-radius: 5px;
 }
+.section h1 {
+    width:100%;
+    margin: 0;
+    padding: 5px 0px;
 
+    background-color: rgba(64,16,16, .5);
+
+    border: 2px, black;
+    border-radius: 5px;
+}
+.section h3 {
+    width: 100%;
+    margin: 0;
+    padding: 2px 0px;
+
+    background-color: rgba(64,16,16, .5);
+}
+.section p {
+    text-align: justify;
+    margin: 10px;
+}
+
+/**
+ * Hero Section
+ */
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -154,7 +174,51 @@ body {
     justify-content: center;
 }
 
+/**
+ * Common Sections
+ */
+.section-album {
+    width: 800px;
+    margin: 0;
+    padding: 0;
 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    background-color: rgba(16,16,16, .5);
+    border: 5px, black;
+    border-radius: 5px;
+}
+.album-bandcamp-embed {
+    width: 400px;
+    height: 340px;
+    padding: 0;
+    margin: 0;
+}
+.album-info {
+    width: 400px;
+    height: 340px;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+}
+.album-info h1 {
+    width: 100%;
+    margin: 0;
+    padding: 5px 0px;
+
+    text-align: left;
+
+    background-color: rgba(16,16,16, .5);
+    border: 2px, black;
+    border-radius: 5px;
+}
+
+
+/**
+ * Common Components
+ */
 .social {
     width: 30px;
     padding: 10px;
@@ -198,4 +262,9 @@ a {
 }
 a:hover {
     color: white;
+}
+
+p {
+    text-align: left;
+    margin: 10px;
 }

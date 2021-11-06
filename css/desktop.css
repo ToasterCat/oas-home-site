@@ -8,6 +8,10 @@
     .header-short-name {
         display: none;
     }
+
+    .section {
+        width: 800px;
+    }
     
     .footer {
         height: 5rem;

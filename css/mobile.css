@@ -9,6 +9,16 @@
     .header-full-name {
         display: none;
     }
+
+    .section {
+        width: 500px;
+    }
+
+    .section-album {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    };
     
     /* footer */
     .footer {
