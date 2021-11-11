@@ -178,17 +178,13 @@ body {
  * Common Sections
  */
 .section-album {
-    width: 800px;
+    width: auto;
     margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    padding: 2rem;
 
     background-color: rgba(16,16,16, .5);
     border: 5px, black;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 .album-bandcamp-embed {
     width: 400px;
@@ -197,23 +193,32 @@ body {
     margin: 0;
 }
 .album-info {
-    width: 400px;
-    height: 340px;
-    padding: 0;
-    margin: 0;
-    font-style: italic;
+    width: 390px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 .album-info h1 {
     width: 100%;
     margin: 0;
-    padding: 5px 0px;
+    padding: 0;
 
-    text-align: left;
-
-    background-color: rgba(16,16,16, .5);
-    border: 2px, black;
-    border-radius: 5px;
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
 }
+.album-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.album-blurb {
+    font-style: italic;
+    font-size: medium;
+}
+
 
 
 /**

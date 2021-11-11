@@ -12,6 +12,18 @@
     .section {
         width: 800px;
     }
+
+    .section-album {
+        width: 800px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: top;
+    };
+    .album-info {
+        margin-left: 2rem;
+    }
     
     .footer {
         height: 5rem;

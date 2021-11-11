@@ -11,14 +11,19 @@
     }
 
     .section {
-        width: 500px;
+        width: 400px;
     }
 
     .section-album {
         width: 400px;
+
         display: flex;
         flex-direction: column;
-    };
+        justify-content: top;
+    }
+    .album-info {
+        margin-top: 1rem;
+    }
     
     /* footer */
     .footer {
