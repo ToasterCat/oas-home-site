@@ -88,6 +88,9 @@ body {
 .footer-legal {
     font-size: 10px;
 }
+.footer-legal p {
+    text-align: center;
+}
 
 
 /** =======================================================
@@ -149,10 +152,16 @@ body {
 /**
  * Hero Section
  */
-.hero-section {
+.section-hero {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-color: rgba(16,16,16, .3);
+    border: 5px black;
+    border-radius: 15px;
+
+    padding: 3rem;
 }
 .hero-title div {
     display: flex;
@@ -178,12 +187,11 @@ body {
  * Common Sections
  */
 .section-album {
-    width: auto;
     margin: 0;
     padding: 2rem;
 
     background-color: rgba(16,16,16, .5);
-    border: 5px, black;
+    border: 5px black;
     border-radius: 15px;
 }
 .album-bandcamp-embed {

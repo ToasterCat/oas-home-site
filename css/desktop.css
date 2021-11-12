@@ -13,9 +13,13 @@
         width: 800px;
     }
 
+    .section-hero {
+        width: 800px;
+    }
+
     .section-album {
         width: 800px;
-        
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
