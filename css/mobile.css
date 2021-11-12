@@ -2,22 +2,33 @@
  * Mobile / Vertical
  */
 @media all and (max-width: 800px) {
-    /* header */
+    /**
+     * HEADER / FOOTER
+     */
     .header {
         height: 50px;
     }
     .header-full-name {
         display: none;
     }
+    /* footer */
+    .footer {
+        height: 5rem;
+    }
 
+    /**
+     * COMMON SECTIONS
+     */
     .section {
         width: 400px;
     }
 
+    /* hero */
     .section-hero {
         width: 400px;
     }
 
+    /* album */
     .section-album {
         width: 400px;
 
@@ -28,13 +39,28 @@
     .album-info {
         margin-top: 1rem;
     }
-    
-    /* footer */
-    .footer {
-        height: 5rem;
+
+    /* show */
+    .section-show {
+        margin: 1rem;
+    }
+    .show-thumbnail {
+        width: 150px;
+    }
+    .show-thumbnail h2 {
+        font-size: large;
+    }
+    .show-thumbnail img {
+        width: 150px;
+        height: 150px;
+    }
+    .show-info h2 {
+        font-size: large;
     }
 
-    /* features */
+    /**
+     * COMMON COMPONENTS
+     */
     .button {
         margin: 10px 20px;
         padding: 20px;

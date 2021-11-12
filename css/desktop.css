@@ -2,13 +2,22 @@
  * Desktop / Horizontal
  */
 @media all and (min-width: 800px) {
+    /**
+     * HEADER / FOOTER
+     */
     .header {
         height: 7rem;
     }
     .header-short-name {
         display: none;
     }
+    .footer {
+        height: 5rem;
+    }
 
+    /**
+     * COMMON SECTIONS
+     */
     .section {
         width: 800px;
     }
@@ -28,18 +37,25 @@
     .album-info {
         margin-left: 2rem;
     }
-    
-    .footer {
-        height: 5rem;
+
+    .section-show {
+        margin: 2rem;
+    }
+    .show-thumbnail {
+        width: 200px;
+    }
+    .show-thumbnail img {
+        width: 200px;
+        height: 150px;
     }
 
+    /**
+     * COMMON COMPONENTS
+     */
     .button {
         margin: 10px 10px;
         padding: 10px 20px;
 
-        transition: border 0.25s, padding 0.25s;
-    }
-    .button:hover {
-        border: 2px solid white;
+        /*transition: border 0.25s, padding 0.25s;*/
     }
 }
