@@ -1,3 +1,7 @@
+/**
+ * (C) Copyright 2021 - ToasterCat Studios LLC
+ */
+
 /** 
  * Desktop / Horizontal
  */
@@ -52,10 +56,16 @@
     /**
      * COMMON COMPONENTS
      */
+    .form-group {
+        flex-direction: row;
+    }
+
     .button {
         margin: 10px 10px;
         padding: 10px 20px;
-
-        /*transition: border 0.25s, padding 0.25s;*/
+    }
+    .primary-button {
+        margin: 10px 10px;
+        padding: 10px 20px;
     }
 }

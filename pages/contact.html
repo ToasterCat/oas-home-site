@@ -1,8 +1,13 @@
+<!--
+    (C) Copyright 2021 - ToasterCat Studios LLC
+-->
+
 <!DOCTYPE HTML>
 <html lang="en">
 
 <head>
 	<title>Contact OAS</title>
+    <link rel="icon" type="image/png" href="../images/logo-saturn.png"/>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/desktop.css">
     <link rel="stylesheet" href="../css/mobile.css">
@@ -30,15 +35,115 @@
             <div class="flex-spacer"></div>
             <div class="header-nav">
                 <!--<a href="./pages/about">BAND</a>-->
-                <a href="./pages/music">MUSIC</a>
-                <a href="./pages/shows">SHOWS</a>
+                <a href="./music">MUSIC</a>
+                <a href="./shows">SHOWS</a>
                 <!--<a href="./pages/gallery">GALLERY</a>-->
-                <a href="./pages/contact">CONTACT</a>
+                <a href="./contact">CONTACT</a>
             </div>
 		</div>
         
-        <div class="hero-section">
-            <h1>// TODO</h1>
+        <!-- 
+            CONTACT FORM
+        -->
+        <div class="section">
+            <h1>Contact OAS</h1>
+
+            <form class="form-group" action="https://formspree.io/f/mzbyrpnd" method="POST">
+                
+                <div class="form-fields">
+                    <!--NAME-->
+                    <div class="form-column">
+                        <div class="form-label">
+                            Name:
+                        </div>
+                        <div class="form-text">
+                            <input id="contact-name" name="name" placeholder="Your Name"/>
+                        </div>
+                    </div>
+                    <!--EMAIL-->
+                    <div class="form-column">
+                        <div class="form-label">
+                            Email:
+                        </div>
+                        <div class="form-text">
+                            <input id="contact-email" name="email" placeholder="Your Email"/>
+                        </div>
+                    </div>
+                    <!--PHONE-->
+                    <div class="form-column">
+                        <div class="form-label">
+                            Phone #: <i>(Optional)</i>
+                        </div>
+                        <div class="form-text">
+                            <input id="contact-phone" name="phone" placeholder="(555) 555-5555"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-box">
+                    <!---MESSAGE-->
+                    <div class="form-column">
+                        <div class="form-label">
+                            Message:
+                        </div>
+                        <div class="form-message">
+                            <textarea id="contact-message" name="message" placeholder="Your message here"></textarea>
+                        </div>
+                    </div>
+
+                    <!--BUTTONS-->
+                    <div class="form-row">
+                        <button type="submit" name="submit" value="Send" class="primary-button">
+                            Submit
+                        </button>
+                        <button type="reset" class="button">
+                            Reset
+                        </button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+
+        <!--
+            SOCIAL ACCOUNTS
+        -->
+        <div class="section">
+            <h1>Connect with OAS</h1>
+
+            <div class="row">
+                <a href="https://www.facebook.com/OctopusAttacksShark">
+                    <img class=logo src="../images/external/fb-white.svg"/>
+                </a>
+                |
+                <a href="https://www.instagram.com/octopus.attacks.shark/">
+                    <img class=logo src="../images/external/instagram-white.svg"/>
+                </a>
+                |
+                <a href="https://soundcloud.com/octopus-attacks-shark">
+                    <img class=logo src="../images/external/soundcloud-white.png"/>
+                </a>
+                |
+                <a href="https://octopus-attacks-shark.bandcamp.com/">
+                    <img class=logo src="../images/external/bandcamp-white.png"/>
+                </a>
+            </div>
+
+        </div>
+
+        <!--
+            LEGAL CONTACT
+        -->
+        <div class="section">
+            <h1>Legal and Business</h1>
+            <p>"Octopus Attacks Shark!!" [OAS] is produced and managed by <a href="toastercat-studios.com">ToasterCat Studios LLC</a>.</p>
+            <p>Manager: Dirk Hortensius <a href="mailto:dirk@toastercat.tech">(dirk@toastercat.tech)</a></p>
+            
+            <h3>Mailing Address</h3>
+            <p>ToasterCat Studios</p>
+            <p>1717 NE 124th St.</p>
+            <p>Seattle, WA. 98125</p>
         </div>
         
         <!-- 
@@ -53,12 +158,16 @@
                     <img src="../images/external/fb-white.svg" class="social"/>
                 </a>
 				|
-				<a href="https://www.instagram.com/octopus_attacks_shark">
+				<a href="https://www.instagram.com/octopus.attacks.shark">
                     <img src="../images/external/instagram-white.svg" class="social"/>
                 </a>
 				|
 				<a href="https://soundcloud.com/octopus-attacks-shark">
                     <img src="../images/external/soundcloud-white.png" class="social" />
+                </a>
+                |
+                <a href="https://octopus-attacks-shark.bandcamp.com/">
+                    <img src="../images/external/bandcamp-white.png" class="social"/>
                 </a>
 			</div>
 			<div class="footer-legal">

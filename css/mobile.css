@@ -1,4 +1,8 @@
 /**
+ * (C) Copyright 2021 - ToasterCat Studios LLC
+ */
+
+/**
  * Mobile / Vertical
  */
 @media all and (max-width: 800px) {
@@ -61,7 +65,15 @@
     /**
      * COMMON COMPONENTS
      */
+    .form-group {
+        flex-direction: column;
+        align-items: left;
+    }
     .button {
+        margin: 10px 20px;
+        padding: 20px;
+    }
+    .primary-button {
         margin: 10px 20px;
         padding: 20px;
     }

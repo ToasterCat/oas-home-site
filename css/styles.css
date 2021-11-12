@@ -1,10 +1,49 @@
+/**
+ * (C) Copyright 2021 - ToasterCat Studios LLC
+ */
+
+/* Roboto (body) */
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.ttf") format("truetype");
+    font-weight: 100;
+}
+/*@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic, oblique;
+}*/
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+    font-weight: bold;
 }
+/*@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-MediumItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic, oblique;
+}*/
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Black.ttf") format("truetype");
+    font-weight: bolder;
+}
+/* RobotoSlab (heading) */
 @font-face {
     font-family: "RobotoSlab";
     src: url("../fonts/RobotoSlab-Medium.ttf") format("truetype");
+}
+
+:root {
+    --color-dark: #33373A;
+    --color-darkred: #320404;
+    --color-primary: #f7c72a;
+    --color-slate: #84847C;
+
+    --color-font: lightgray;
+    --font-size: 1rem;
 }
 
 /** =======================================================
@@ -18,7 +57,8 @@ body {
     /* Font */
     font-family: "Roboto";
     color: lightgray;
-    font-size: 15px;
+    font-size: var(--font-size);
+    font-weight: var(--color-font);
     
     background-image: url("../images/hero.jpg");
     background-repeat: no-repeat;
@@ -51,7 +91,7 @@ body {
     justify-content: space-between;
     
     font-family: "RobotoSlab";
-    font-size: 25px;
+    font-size: 2rem;
     vertical-align: middle;
 }
 .header-nav {
@@ -118,13 +158,14 @@ body {
  * Core Sections
  */
 .section {
-    width: 500px;
+    width: 25rem;
     margin: 2rem;
 
     background-color: rgba(16,16,16, .8);
     
     display: flex;
     flex-direction: column;
+    align-items: center;
     
     border: 5px, black;
     border-radius: 5px;
@@ -173,8 +214,9 @@ body {
     flex-direction: column;
 }
 .hero-title h1 {
+    font-family: "RobotoSlab";
     font-size: 40px;
-    font-weight: 300;
+    font-weight: bolder;
 }
 .hero-title h3 {
     font-size: 20px;
@@ -240,7 +282,6 @@ body {
     align-items: center;
 }
 .album-blurb {
-    font-style: italic;
     font-size: medium;
 }
 
@@ -259,7 +300,7 @@ body {
 .show-thumbnail {
     border: 4px solid black;
     border-radius: 7px;
-    background-color: #320404;
+    background-color: var(--color-dark);
 
     display: flex;
     flex-direction: column;
@@ -285,6 +326,58 @@ body {
 /**
  * Common Components
  */
+.row {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTACT FORM */
+.form-group {
+    margin: 0;
+    padding: 0;
+
+    display:flex;
+}
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.form-box {
+    width: 100%;
+}
+.form-row {
+    margin: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.form-column {
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.form-label {
+    font-family: "Roboto";
+    font-weight: bold;
+    text-align: left;
+}
+.form-text {
+    width: auto;
+    display: flex;
+    align-items: left;
+}
+.form-message{ 
+    width: auto;
+    align-items: left;
+}
+
+ /* IMAGE FORMATS */
 .social {
     width: 30px;
     padding: 10px;
@@ -295,17 +388,19 @@ body {
 }
 
 
-/**
- * ACTION BUTTONS
- */
+/* ACTION BUTTON */
 .button {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    color: #f7c72a;
-    border: 2px solid #f7c72a;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid var(--color-slate);
     border-radius: 10px;
+
+    color: #a0a094;
+    font-family: 'Roboto';
+    font-weight: bold;
 
     transition:
         color 0.5s,
@@ -314,8 +409,38 @@ body {
 }
 .button:hover {
     color: black;
+
     border-color: black;
-    background-color: #f7c72a;
+    background-color: var(--color-slate);
+
+    cursor: pointer;
+}
+
+.primary-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgba(0,0,0,0);
+
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+
+    color: var(--color-primary);
+    font-family: 'Roboto';
+    font-weight: bold;
+
+    transition:
+        color 0.5s,
+        border 0.5s,
+        background-color 0.5s;
+}
+.primary-button:hover {
+    color: black;
+    border-color: black;
+    background-color: var(--color-primary);
+
+    cursor: pointer;
 }
 
 
@@ -340,7 +465,49 @@ a:hover {
     color: white;
 }
 
+h1 {
+    font-family: "RobotoSlab";
+    font-weight: normal;
+}
+
+h3 {
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
 p {
+    font-family: "Roboto";
+    font-weight: 100;
+
     text-align: left;
     margin: 10px;
+}
+
+input {
+    height: var(--font-size);
+
+    background-color: #33373A;
+    color: lightgray;
+    border: border 1px solid white;
+    border-radius: 0;
+
+    font-size: var(--font-size);
+    font-family: "Roboto";
+    font-weight: 100;
+}
+
+textarea {
+    min-width: 20rem;
+    max-width: 25rem;
+    min-height: 10rem;
+    max-height: 20rem;
+    overflow: auto;
+
+    background-color: var(--color-dark);
+    color: lightgray;
+    border: border 1px solid white;
+    border-radius: 0;
+
+    font-family: "Roboto";
+    font-weight: 100;
 }
