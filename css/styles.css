@@ -191,8 +191,8 @@ body {
     border-radius: 3px;
 }
 .section p {
-    text-align: justify;
-    margin: 10px;
+    text-align: center;
+    margin: 1rem;
 }
 
 /**
@@ -239,7 +239,7 @@ body {
     justify-content: start;
     align-items: left;
 
-    max-height: 500px;
+    max-height: 800px;
     overflow-y: auto;
     overflow-x: hidden;
 }
