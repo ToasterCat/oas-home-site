@@ -11,7 +11,7 @@ Hosted on ToasterCat AWS account via S3 Static Hosting Configuration
 Deployed via AWS-CLI
 
 Production (www)
-`$ aws s3 sync ./ s3://www.octopus-attacks-shark.com/ --exclude '.git/*' --profile toastercat-s3`
+`$ aws s3 sync ./ s3://www.octopus-attacks-shark.com/ --exclude '.git/*' --profile oas-s3`
 
 Integration (beta, gamma)
-`$ aws s3 sync ./ s3://beta.octopus-attacks-shark.com/ --exclude '.git/*' --profile toastercat-s3`
+`$ aws s3 sync ./ s3://beta.octopus-attacks-shark.com/ --exclude '.git/*' --profile oas-s3`
