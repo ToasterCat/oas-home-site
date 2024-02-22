@@ -321,6 +321,9 @@ body {
     font-size: medium;
     font-style: italic;
 }
+.show-info h4 {
+    font-size: small;
+}
 
 
 /**
