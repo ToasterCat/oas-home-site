@@ -22,39 +22,69 @@
     .header-full-name {
         display: none;
     }
+    .header .flex-spacer {
+        display:none;
+    }
+    .header-nav {
+        width: 300px;
+    }
+    .header-nav a {
+        font-size: 0.7rem;
+    }
+    
     /* footer */
     .footer {
-        height: 5rem;
+        height: 6rem;
     }
-
+    .footer-legal {
+        font-size: .6rem;
+    }
+    
     /**
      * COMMON SECTIONS
      */
     .section {
-        width: 400px;
+        width: 20rem;
+    }
+    .section h1 {
+        font-size: 1.5rem;
+    }
+    .section h2 {
+        font-size: 1.4rem;
+    }
+    .section h3 {
+        font-size: .8rem;
     }
 
     /* hero */
     .section-hero {
-        width: 400px;
+        padding: 1rem;
+        margin: 2rem;
+    }
+    .hero-badge {
+        width: 14rem;
     }
     .hero-title h1 {
         display: none;
     }
-    .hero-title img {
-        width: 90%;
+    .hero-title h3 {
+        font-size: 1rem;
     }
 
     /* album */
     .section-album {
-        width: 400px;
+        width: 20rem;
 
         display: flex;
         flex-direction: column;
         justify-content: top;
+        align-items: center;
     }
     .album-info {
         margin-top: 1rem;
+    }
+    .album-info h1 {
+        font-size: 2rem;
     }
 
     /* show */
@@ -62,17 +92,26 @@
         margin: 1rem;
     }
     .show-thumbnail {
-        width: 150px;
+        width: 7rem;
     }
     .show-thumbnail h2 {
-        font-size: large;
+        font-size: 1rem;
     }
     .show-thumbnail img {
-        width: 150px;
-        height: 150px;
+        width: 7rem;
+        height: 7rem;
     }
     .show-info h2 {
-        font-size: large;
+        font-size: 0.8rem;
+        border-bottom: 1ps black solid;
+    }
+    .show-info h3 {
+        background-color: rgba(16, 16, 16, .8);
+        font-size: .6rem;
+        margin: .5rem;
+    }
+    .show-info h4 {
+        font-size: 0.6rem;
     }
 
     /**
@@ -83,11 +122,13 @@
         align-items: left;
     }
     .button {
-        margin: 10px 20px;
-        padding: 20px;
+        margin: 1rem 1rem;
+        padding: 1rem;
+        font-size: 1rem;
     }
     .primary-button {
-        margin: 10px 20px;
-        padding: 20px;
+        margin: 1rem 1rem;
+        padding: 1rem;
+        font-size: 1rem;
     }
 }

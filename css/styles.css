@@ -55,6 +55,7 @@ body {
     font-size: var(--font-size);
     font-weight: var(--color-font);
     
+    background-color: black;
     background-image: url("../images/hero.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -106,7 +107,7 @@ body {
 .header-nav {
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
 }
 .header-nav a {
     padding: 10px;
@@ -170,38 +171,54 @@ body {
     width: 25rem;
     margin: 2rem;
 
-    background-color: rgba(16,16,16, .8);
+    background-color: rgba(16,16,16, .4);
     
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    border: 5px, black;
-    border-radius: 5px;
 }
 .section h1 {
     width:100%;
     margin: 0;
     padding: 5px 0px;
-
-    background-color: #320404;
-    opacity: .75;
+    
+    background-color: rgba(16, 16, 16, .8);
 
     border-radius: 5px;
+}
+.section h2 {
+    width: 100%;
+    margin: 0;
+    padding: 2px 0px;
+
+    background-color: rgba(16, 16, 16, .8);
+
+    border-radius: 3px;
 }
 .section h3 {
     width: 100%;
     margin: 0;
     padding: 2px 0px;
 
-    background-color: #320404;
-    opacity: .75;
-
     border-radius: 3px;
+    
+    font-style: italic;
 }
 .section p {
     text-align: center;
     margin: 1rem;
+}
+.sub-section {
+    width: 80%;
+    background-color: rgba(16, 16, 16, .4);
+    
+    margin: 1rem 0rem;;
+}
+.sub-section p {
+    text-align: left;
+    margin: 1rem;
+    
+    font-size: .8rem;
 }
 
 /**
@@ -216,16 +233,15 @@ body {
     border: 5px black;
     border-radius: 15px;
 
-    margin: 3rem;
-    padding: 3rem;
+    margin: 2rem;
+    padding: 1rem;
+}
+.hero-badge {
+    opacity: 80%;
 }
 .hero-title div {
     display: flex;
     flex-direction: column;
-}
-.hero-title img {
-    width: 50%;
-    opacity: 75%;
 }
 .hero-title h1 {
     font-family: "OldEnglish";
@@ -262,17 +278,24 @@ body {
 /* album */
 .section-album {
     margin: 2rem;
-    padding: 2rem;
+    padding: 1rem;
 
-    background-color: rgba(16,16,16, .5);
-    border: 5px black;
+    background-color: rgba(16,16,16, .4);
     border-radius: 15px;
 }
 .album-bandcamp-embed {
-    width: 400px;
-    height: 340px;
+    width: 15rem;
     padding: 0;
     margin: 0;
+}
+.album-bandcamp-embed iframe {
+    width: 15rem;
+    height: 30rem;
+    
+    border-radius: 5px;
+    border: 0; 
+    
+    opacity: 80%
 }
 .album-info {
     width: 390px;
@@ -304,7 +327,7 @@ body {
 .section-show {
     border: 10px black;
     border-radius: 5px;
-    background-color: #33373A;
+    background-color: rgb(32,32,32);
 
     padding: 1rem;
 
@@ -315,7 +338,8 @@ body {
 .show-thumbnail {
     border: 4px solid black;
     border-radius: 7px;
-    background-color: var(--color-dark);
+    background-color: rgba(16,16,16, .8);
+
 
     display: flex;
     flex-direction: column;
@@ -332,12 +356,14 @@ body {
 
     margin-left: 1rem;
 }
-.show-info h3 {
+.show-info h2 {
     font-size: medium;
-    font-style: italic;
+    background-color: inherit;
 }
-.show-info h4 {
-    font-size: small;
+.show-info h3 {
+    width: 100%;
+    font-style: italic;
+    background-color: rgba (16, 16, 16, .8);
 }
 
 

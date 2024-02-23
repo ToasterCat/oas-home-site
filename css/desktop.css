@@ -36,6 +36,9 @@
     .section-hero {
         width: 800px;
     }
+    .hero-badge {
+        width: 20rem;
+    }
 
     .section-album {
         width: 800px;
@@ -44,7 +47,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: top;
-    };
+    }
     .album-info {
         margin-left: 2rem;
     }
@@ -53,11 +56,11 @@
         margin: 2rem;
     }
     .show-thumbnail {
-        width: 200px;
+        width: 10rem;
     }
     .show-thumbnail img {
-        width: 200px;
-        height: 150px;
+        width: 10rem;
+        height: 7rem;
     }
 
     /**
