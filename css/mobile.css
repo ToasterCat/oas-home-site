@@ -10,7 +10,14 @@
      * HEADER / FOOTER
      */
     .header {
-        height: 50px;
+        height: 3rem;
+    }
+    .header-brand {
+        width: 8.7rem;
+    }
+    .header-logo {
+        height: 2rem;
+        width: 2rem;
     }
     .header-full-name {
         display: none;
@@ -30,6 +37,12 @@
     /* hero */
     .section-hero {
         width: 400px;
+    }
+    .hero-title h1 {
+        display: none;
+    }
+    .hero-title img {
+        width: 90%;
     }
 
     /* album */

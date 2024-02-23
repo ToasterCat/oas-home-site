@@ -8,32 +8,27 @@
     src: url("../fonts/Roboto-Light.ttf") format("truetype");
     font-weight: 100;
 }
-/*@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
-    font-weight: 100;
-    font-style: italic, oblique;
-}*/
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto-Medium.ttf") format("truetype");
     font-weight: bold;
 }
-/*@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-MediumItalic.ttf") format("truetype");
-    font-weight: bold;
-    font-style: italic, oblique;
-}*/
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto-Black.ttf") format("truetype");
     font-weight: bolder;
 }
-/* RobotoSlab (heading) */
+/* RobotoSlab (body heading) */
 @font-face {
     font-family: "RobotoSlab";
     src: url("../fonts/RobotoSlab-Medium.ttf") format("truetype");
+}
+
+/* Olde English (brand heading) */
+@font-face {
+    font-family: "OldEnglish";
+    src: url("../fonts/OldEnglish.ttf") format("truetype");
+    font-weight: 100;
 }
 
 :root {
@@ -85,14 +80,28 @@ body {
     background-color: rgba(16,16,16, .3);
 }
 .header-brand {
+    height: inherit;
+    
     display:flex;
     flex-direction: row;
     align-items: center;
+    vertical-align: middle;
     justify-content: space-between;
     
-    font-family: "RobotoSlab";
-    font-size: 2rem;
-    vertical-align: middle;
+    font-family: "OldEnglish";
+    font-size: 1.7rem;
+    text-shadow: black -2px -2px;
+}
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+}
+.header-logo img {
+    height: inherit;
+    width: inherit;
 }
 .header-nav {
     display: flex;
@@ -207,16 +216,22 @@ body {
     border: 5px black;
     border-radius: 15px;
 
+    margin: 3rem;
     padding: 3rem;
 }
 .hero-title div {
     display: flex;
     flex-direction: column;
 }
+.hero-title img {
+    width: 50%;
+    opacity: 75%;
+}
 .hero-title h1 {
-    font-family: "RobotoSlab";
+    font-family: "OldEnglish";
     font-size: 40px;
     font-weight: bolder;
+    text-shadow: black -2px -2px;
 }
 .hero-title h3 {
     font-size: 20px;
@@ -246,7 +261,7 @@ body {
 
 /* album */
 .section-album {
-    margin: 0;
+    margin: 2rem;
     padding: 2rem;
 
     background-color: rgba(16,16,16, .5);

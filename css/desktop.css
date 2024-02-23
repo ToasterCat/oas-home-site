@@ -10,7 +10,14 @@
      * HEADER / FOOTER
      */
     .header {
-        height: 7rem;
+        height: 5rem;
+    }
+    .header-brand {
+        width: 28rem;
+    }
+    .header-logo {
+        height: 3.5rem;
+        width: 3.5rem;
     }
     .header-short-name {
         display: none;
