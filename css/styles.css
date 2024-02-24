@@ -520,6 +520,33 @@ body {
     cursor: pointer;
 }
 
+.primary-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgba(0,0,0,0);
+
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+
+    color: var(--color-primary);
+    font-family: 'Roboto';
+    font-weight: bold;
+
+    transition:
+        color 0.5s,
+        border 0.5s,
+        background-color 0.5s;
+}
+.primary-button:hover {
+    color: black;
+    border-color: black;
+    background-color: var(--color-primary);
+
+    cursor: pointer;
+}
+
 .primary-button-small {
     display: flex;
     flex-direction: column;
