@@ -5,7 +5,7 @@
 /** 
  * Desktop / Horizontal
  */
-@media all and (min-width: 800px) {
+@media all and (min-width: 50rem) {
     /**
      * HEADER / FOOTER
      */
@@ -40,6 +40,7 @@
         width: 20rem;
     }
 
+    /* albums */
     .section-album {
         width: 800px;
 
@@ -51,31 +52,77 @@
     .album-info {
         margin-left: 2rem;
     }
+    .album-bandcamp-embed {
+        width: 30rem;
+        padding: 0;
+        margin: 0;
+    }
+    .album-bandcamp-embed iframe {
+        width: 17rem;
+        height: 30rem;
 
+        border-radius: 5px;
+        border: 0; 
+
+        opacity: 80%
+    }
+
+    /* shows */
     .section-show {
-        margin: 2rem;
+        width: 30rem;
+        margin: 1rem 2rem;
+    }
+    .show-info h2 {
+        font-size: 1.4rem;
+    }
+    .show-info h3 {
+        font-size: 1rem;
+        margin: .25rem .5rem;
+        background-color: rgba(16, 16, 16, .8);
+        margin: 1rem;
+    }
+    .show-info h4 {
+        margin: .25rem;
+        font-size: .7rem;
     }
     .show-thumbnail {
         width: 10rem;
+        height: 13rem;
     }
     .show-thumbnail img {
         width: 10rem;
-        height: 7rem;
+        height: 10rem;
+    }
+    .show-thumbnail h2 {
+        font-size: 1rem;
+    }
+    
+    /* contact form */
+    .form-group {
+        flex-direction: row;
+    }
+    textarea {
+        width: 25rem;
+        height: 10rem;
     }
 
     /**
      * COMMON COMPONENTS
      */
-    .form-group {
-        flex-direction: row;
-    }
-
     .button {
-        margin: 10px 10px;
-        padding: 10px 20px;
+        margin: .5rem;
+        padding: .5rem 1rem;
+    }
+    .button-small {
+        margin: .5rem;
+        padding: .5rem 1rem;
     }
     .primary-button {
-        margin: 10px 10px;
-        padding: 10px 20px;
+        margin: .5rem .5rem;
+        padding: .5rem 1rem;
+    }
+    .primary-button-small {
+        margin: .5rem .5rem;
+        padding: .5rem 1rem;
     }
 }
