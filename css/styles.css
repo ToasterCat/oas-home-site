@@ -23,7 +23,6 @@
     font-family: "RobotoSlab";
     src: url("../fonts/RobotoSlab-Medium.ttf") format("truetype");
 }
-
 /* Olde English (brand heading) */
 @font-face {
     font-family: "OldEnglish";
@@ -69,6 +68,9 @@ body {
 /** =======================================================
  * HEADER
  * ====================================================== */
+#header {
+    width: 100%;
+}
 .header {
     width: 100%;
     
@@ -117,6 +119,9 @@ body {
 /** =======================================================
  * FOOTER
  * ====================================================== */
+#footer {
+    width: 100%;
+}
 .footer {
     width: 100%;
     background-color: rgba(16,16,16, 0.3);
@@ -232,6 +237,7 @@ body {
     opacity: 70%
 }
 
+
 /**
  * Hero Section
  */
@@ -270,6 +276,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 
 /**
  * Common Sections
@@ -347,6 +354,7 @@ body {
 .album-blurb {
     font-size: medium;
 }
+
 
 /* show */
 .section-show {
