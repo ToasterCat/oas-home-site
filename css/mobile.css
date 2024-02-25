@@ -66,14 +66,13 @@
 
     /* hero */
     .section-hero {
-        padding: 1rem;
         margin: 2rem;
     }
     .hero-badge {
         width: 13rem;
     }
     .hero-title h1 {
-        display: none;
+        font-size: 2rem;
     }
     .hero-title h3 {
         font-size: 1rem;

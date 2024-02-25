@@ -33,10 +33,12 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/desktop.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
 	<div class="page-container">
+        
 
 		<!--
             STANDARD HEADER
@@ -44,22 +46,25 @@
             TODO: Serve as common component [MUSIC-36]
                 https://toastercatstudios.atlassian.net/browse/MUSIC-36
         -->
-		<div class="header">
-			<a href="#" class="brand">
-				<div class="header-brand">
-	                <div class="header-logo">
-	                    <img src="images/OAS-logo.png" class="logo"/>
-	                </div>
-	                <div class="header-full-name"> Octopus Attacks Shark!! </div>
-	                <div class="header-short-name"> OAS </div>
-            	</div>
-            </a>
-            <div class="flex-spacer"></div>
-            <div class="header-nav">
-                <a href="./pages/about.html">BAND</a>
-                <a href="./pages/music.html">MUSIC</a>
-                <a href="./pages/shows.html">SHOWS</a>
-                <a href="./pages/contact.html">CONTACT</a>
+        <div id="header-container">
+            <div id="bg"></div>
+            <div class="header">
+                <a href="#" class="brand">
+                    <div class="header-brand">
+                        <div class="header-logo">
+                            <img src="images/OAS-logo.png" class="logo"/>
+                        </div>
+                        <div class="header-full-name"> Octopus Attacks Shark!! </div>
+                        <div class="header-short-name"> OAS </div>
+                    </div>
+                </a>
+                <div class="flex-spacer"></div>
+                <div class="header-nav">
+                    <a href="./pages/about.html">BAND</a>
+                    <a href="./pages/music.html">MUSIC</a>
+                    <a href="./pages/shows.html">SHOWS</a>
+                    <a href="./pages/contact.html">CONTACT</a>
+                </div>
             </div>
 		</div>
 
@@ -81,35 +86,32 @@
             </div>
 		</div>
 
-
-		<!-- 
-            STANDARD FOOTER
-
-            TODO: Serve as common component [MUSIC-36]
-                https://toastercatstudios.atlassian.net/browse/MUSIC-36
-        -->
-		<div class="footer">
-			<div class="footer-links">
-				<a href="https://www.facebook.com/OctopusAttacksShark">
-                    <img src="images/external/fb-white.svg" class="social"/>
-                </a>
-				<a href="https://www.instagram.com/octopus.attacks.shark">
-                    <img src="images/external/instagram-white.svg" class="social"/>
-                </a>
-				<a href="https://soundcloud.com/octopus-attacks-shark">
-                    <img src="images/external/soundcloud-white.png" class="social" />
-                </a>
-                <a href="https://octopus-attacks-shark.bandcamp.com/">
-                    <img src="images/external/bandcamp-white.png" class="social"/>
-                </a>
-			</div>
-			<div class="footer-legal">
-				<p>(C) Copyright 2024 - ToasterCat Studios LLC<p>
-                <p>We have no money. Please don't sue us.</p>
-			</div>
-		</div>
-		
-	</div>
+		<div id="footer"></div>
+    </div>
+    
+    
+    <!--
+        ONLOAD SCRIPT
+    -->
+    <script>
+        $(function(){
+          //$("#header").load("./components/header.html");
+          $("#footer").load("./components/footer.html"); 
+        });
+        
+        /**
+          Mobile URL Bar Fix:
+          https://stackoverflow.com/questions/24944925/background-image-jumps-when-address-bar-hides-ios-android-mobile-chrome
+        */
+        /*var bg = $("#bg");
+        function resizeBackground() {
+            var h = $(window).height();
+            bg.height(h);
+            console.log("H: " + h);
+        }
+        $(window).resize(resizeBackground);
+        resizeBackground();*/
+    </script>
 </body>
 
 </html>
