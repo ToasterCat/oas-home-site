@@ -6,5 +6,4 @@ var bg = $("#bg","page-container");
 function resizeBackground() {
     var h = $(window).height();
     bg.height(h);
-    console.log("H: " + h);
 };

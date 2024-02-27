@@ -189,8 +189,9 @@ body {
 .section {
     width: 25rem;
     margin: 2rem;
-
-    background-color: rgba(16,16,16, .4);
+    
+    border-radius: 5px;
+    background-color: rgba(16, 16, 16, .4);
     
     display: flex;
     flex-direction: column;
@@ -198,7 +199,7 @@ body {
 }
 .section h1 {
     width:100%;
-    margin: 0;
+    margin: 1rem 1rem;
     padding: 5px 0px;
 
     border-radius: 5px;
@@ -230,13 +231,17 @@ body {
 }
 .section p {
     text-align: center;
-    margin: 1rem;
+    margin: 0rem 1rem 1rem 1rem;
 }
 .sub-section {
     width: 80%;
-    background-color: rgba(16, 16, 16, .4);
+    background-color: rgba(16, 16, 16, .8);
     
     margin: 1rem 0rem;;
+}
+.sub-section h3 {
+    padding: .5rem;
+    font-weight: 100;
 }
 .sub-section p {
     text-align: left;
@@ -244,11 +249,30 @@ body {
     
     font-size: .8rem;
 }
+
+/**
+ * Section Tools
+ */
 .section-divider {
     width: 100%;
     margin: 1rem 0rem;
     
     opacity: 70%
+}
+.section-list {
+    background-color: rgba(16, 16, 16, .8);
+    border-radius: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.section-list-divider {
+    width: 100%;
 }
 
 
@@ -260,7 +284,6 @@ body {
     flex-direction: column;
     align-items: center;
 
-    background-color: rgba(16,16,16, .3);
     border-radius: 15px;
 
     margin: 2rem;
@@ -290,11 +313,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
-
-
-/**
- * Common Sections
- */
 .section-page-title {
     display: flex;
     flex-direction: column;
@@ -304,21 +322,13 @@ body {
 
     margin-top: 2rem;
     padding: 1rem;
+    
+    filter: drop-shadow(.5rem .75rem .2rem #020202);
 }
 .section-page-title h1 {
     font-family: "OldEnglish";
+    text-shadow: black -2px -2px;
 }
-.section-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: left;
-
-    max-height: 30rem;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
 
 
 /* album */
@@ -423,6 +433,12 @@ body {
     padding: 0;
 }
 
+/**
+ * Contact
+ */
+.contact-social-links {
+    margin: 1rem 2rem 2rem 2rem;
+}
 
 /**
  * Common Components

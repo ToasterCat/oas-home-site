@@ -63,6 +63,10 @@
     .section h4 {
         font-size: .6rem;
     }
+    /* tools */
+    section-list {
+        max-height: 30rem;
+    }
 
     /* hero */
     .section-hero {

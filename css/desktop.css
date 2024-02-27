@@ -30,7 +30,11 @@
      * COMMON SECTIONS
      */
     .section {
-        width: 800px;
+        width: 50rem;;
+    }
+    /* tools */
+    .section-list {
+        max-height: 40rem;
     }
 
     .section-hero {
