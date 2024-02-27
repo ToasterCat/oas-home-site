@@ -46,29 +46,52 @@
 
     /* albums */
     .section-album {
-        width: 800px;
+        width: 50rem;
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: top;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 24rem 24rem;
+        align-items: flex-start;
+        
+        /*display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: wrap;*/
+        
+        grid-template-areas:
+            "a b"
+            "c b";
     }
     .album-info {
-        margin-left: 2rem;
+        grid-area: a;
+    }
+    .album-info h1 {
+        margin: 2rem;
     }
     .album-bandcamp-embed {
-        width: 30rem;
+        width: 24rem;
+        height: 48rem;
         padding: 0;
         margin: 0;
+        grid-area: b;
     }
     .album-bandcamp-embed iframe {
-        width: 17rem;
-        height: 30rem;
+        width: 24rem;
+        height: 48rem;
 
         border-radius: 5px;
-        border: 0; 
+        border: 0;
 
         opacity: 80%
+    }
+    .album-blurb {
+        width: 100%;
+        max-height: 24rem;
+        grid-area: c;
+    }
+    .album-buy-button {
+        display: block;
+        opacity: 80%;
     }
 
     /* shows */

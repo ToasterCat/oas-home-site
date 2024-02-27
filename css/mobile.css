@@ -64,7 +64,7 @@
         font-size: .6rem;
     }
     /* tools */
-    section-list {
+    .section-list {
         max-height: 30rem;
     }
 
@@ -96,6 +96,8 @@
     }
     .album-info h1 {
         font-size: 1.4rem;
+        margin: 0.25rem;
+        padding: 0;
     }
 
     /* show */
