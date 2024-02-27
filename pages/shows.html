@@ -39,7 +39,9 @@
 <body>
     <div id="bg" class="bg"></div>
 	<div id="page-container" class="page-container">
-        <div id="header"></div>   
+        <div id="header">
+            <img class="loading" src="../images/icons/loading-min.gif"/>
+        </div>   
         
         <div class="section-page-title">
             <h1>Live Shows</h1>
@@ -256,20 +258,18 @@
         </div>
 
         
-        <div id="footer"></div>
+        <div id="footer">
+            <img class="loading" src="../images/icons/loading-min.gif"/>
+        </div>
 
     </div>
     <!--
         ONLOAD SCRIPT
     -->
-    <script type="text/javascript" src="../js/bg-resize.js"></script>
     <script>
         $(function(){
           $("#header").load("../components/header.html");
           $("#footer").load("../components/footer.html"); 
         });
-        
-        $(window).resize(resizeBackground);
-        resizeBackground();
     </script>
 </body>

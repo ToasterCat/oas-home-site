@@ -82,23 +82,21 @@
             </div>
 		</div>
 
-		<div id="footer"></div>
+		<div id="footer">
+            <img class="loading" src="../images/icons/loading.gif"/>
+        </div>
     </div>
     
     
     <!--
         ONLOAD SCRIPT
     -->
-    <script type="text/javascript" src="js/bg-resize.js"></script>
     <script>
         $(function(){
             // TODO: Header links should be derived by relative path.
             //$("#header").load("./components/header.html");
             $("#footer").load("./components/footer.html"); 
         });
-        
-        $(window).resize(resizeBackground);
-        resizeBackground();
     </script>
 </body>
 

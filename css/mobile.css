@@ -9,6 +9,9 @@
     /**
      * HEADER / FOOTER
      */
+    #header {
+        min-height: 2.5rem;
+    }
     .header {
         height: 2.5rem;
     }
@@ -34,6 +37,9 @@
     }
     
     /* footer */
+    #footer {
+        min-height: 6rem;
+    }
     .footer {
         height: 6rem;
     }
@@ -46,6 +52,7 @@
      */
     .section {
         width: 15rem;
+        padding: 0;
     }
     .section p {
         font-size: .7rem;
@@ -99,6 +106,16 @@
         margin: 0.25rem;
         padding: 0;
     }
+    .album-bandcamp-embed {
+        margin: 1rem 0rem;
+        
+        width: 15rem;
+        padding: 0;
+    }
+    .album-bandcamp-embed iframe {
+        width: 15rem;
+        height: 30rem;
+    }
 
     /* show */
     .section-show {
@@ -139,20 +156,20 @@
         font-size: .7rem;
     }
     .form-text {
-        width: 13rem;
+        width: 11.5rem;
     }
     .form-box {
-        width: 13rem;
+        width: 11.5rem;
     }
     .form-message {
-        width: 13rem;
+        width: 11.5rem;
     }
     input {
-        width: 12rem;
+        width: 11.5rem;
         font-size: .6rem;
     }
     textarea {
-        width: 12rem;
+        width: 11.5rem;
         height: 5rem;
         
         font-size: .6rem;

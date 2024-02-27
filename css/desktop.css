@@ -9,8 +9,11 @@
     /**
      * HEADER / FOOTER
      */
+    #header {
+        min-height: 4rem;
+    }
     .header {
-        height: 5rem;
+        height: 4rem;
     }
     .header-brand {
         width: 28rem;
@@ -21,6 +24,9 @@
     }
     .header-short-name {
         display: none;
+    }
+    #footer {
+        min-height: 5rem;
     }
     .footer {
         height: 5rem;
