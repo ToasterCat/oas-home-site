@@ -46,16 +46,21 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    
+    display: flex;
+    z-index: 0;
     
     /* Font */
     font-family: "Roboto";
     color: lightgray;
     font-size: var(--font-size);
-    font-weight: var(--color-font);    
+    font-weight: var(--color-font);
     
     margin: 0;
     padding: 0;
+    
+    background-color: black;
 }
 
 /** =======================================================

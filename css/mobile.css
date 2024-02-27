@@ -70,6 +70,9 @@
     .section h4 {
         font-size: .6rem;
     }
+    .sub-section {
+        margin: 1rem .25rem;
+    }
     /* tools */
     .section-list {
         max-height: 30rem;
