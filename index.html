@@ -37,36 +37,32 @@
 </head>
 
 <body>
-	<div class="page-container">
-        
-
+    <div id="bg" class="bg"></div>
+	<div id="page-container" class="page-container">
 		<!--
             STANDARD HEADER
 
             TODO: Serve as common component [MUSIC-36]
                 https://toastercatstudios.atlassian.net/browse/MUSIC-36
         -->
-        <div id="header-container">
-            <div id="bg"></div>
-            <div class="header">
-                <a href="#" class="brand">
-                    <div class="header-brand">
-                        <div class="header-logo">
-                            <img src="images/OAS-logo.png" class="logo"/>
-                        </div>
-                        <div class="header-full-name"> Octopus Attacks Shark!! </div>
-                        <div class="header-short-name"> OAS </div>
+        <div class="header">
+            <a href="#" class="brand">
+                <div class="header-brand">
+                    <div class="header-logo">
+                        <img src="images/OAS-logo.png" class="logo"/>
                     </div>
-                </a>
-                <div class="flex-spacer"></div>
-                <div class="header-nav">
-                    <a href="./pages/about.html">BAND</a>
-                    <a href="./pages/music.html">MUSIC</a>
-                    <a href="./pages/shows.html">SHOWS</a>
-                    <a href="./pages/contact.html">CONTACT</a>
+                    <div class="header-full-name"> Octopus Attacks Shark!! </div>
+                    <div class="header-short-name"> OAS </div>
                 </div>
+            </a>
+            <div class="flex-spacer"></div>
+            <div class="header-nav">
+                <a href="./pages/about.html">BAND</a>
+                <a href="./pages/music.html">MUSIC</a>
+                <a href="./pages/shows.html">SHOWS</a>
+                <a href="./pages/contact.html">CONTACT</a>
             </div>
-		</div>
+        </div>
 
         
 		<div class="section-hero">
@@ -93,24 +89,16 @@
     <!--
         ONLOAD SCRIPT
     -->
+    <script type="text/javascript" src="js/bg-resize.js"></script>
     <script>
         $(function(){
-          //$("#header").load("./components/header.html");
-          $("#footer").load("./components/footer.html"); 
+            // TODO: Header links should be derived by relative path.
+            //$("#header").load("./components/header.html");
+            $("#footer").load("./components/footer.html"); 
         });
         
-        /**
-          Mobile URL Bar Fix:
-          https://stackoverflow.com/questions/24944925/background-image-jumps-when-address-bar-hides-ios-android-mobile-chrome
-        */
-        /*var bg = $("#bg");
-        function resizeBackground() {
-            var h = $(window).height();
-            bg.height(h);
-            console.log("H: " + h);
-        }
         $(window).resize(resizeBackground);
-        resizeBackground();*/
+        resizeBackground();
     </script>
 </body>
 

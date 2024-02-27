@@ -38,8 +38,8 @@
 
 
 <body>    
-	<div class="page-container">
-        <div id="bg"></div>
+    <div id="bg" class="bg"></div>
+	<div id="page-container" class="page-container">
         <div id="header"></div>
         
 
@@ -136,21 +136,13 @@
     <!--
         ONLOAD SCRIPT
     -->
+    <script type="text/javascript" src="../js/bg-resize.js"></script>
     <script>
         $(function(){
           $("#header").load("../components/header.html");
           $("#footer").load("../components/footer.html"); 
         });
         
-        
-        /**
-          Mobile URL Bar Fix:
-          https://stackoverflow.com/questions/24944925/background-image-jumps-when-address-bar-hides-ios-android-mobile-chrome
-        */
-        var bg = $("#bg");
-        function resizeBackground() {
-            bg.height($(window).height());
-        }
         $(window).resize(resizeBackground);
         resizeBackground();
     </script>
