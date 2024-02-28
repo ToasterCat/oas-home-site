@@ -56,7 +56,7 @@
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 24rem 24rem;
+        grid-template-rows: 16rem 24rem; /* y, x */
         align-items: flex-start;
         
         /*display: flex;
@@ -65,25 +65,42 @@
         flex-wrap: wrap;*/
         
         grid-template-areas:
-            "a b"
-            "c b";
+            "b a"
+            "b c"
+            "b c";
     }
     .album-info {
         grid-area: a;
     }
     .album-info h1 {
-        margin: 2rem;
+        margin: .5rem 0rem 1.5rem;
     }
     .album-bandcamp-embed {
         width: 24rem;
-        height: 48rem;
+        height: 47rem;
         padding: 0;
         margin: 0;
         grid-area: b;
     }
     .album-bandcamp-embed iframe {
         width: 24rem;
-        height: 48rem;
+        height: 47rem;
+
+        border-radius: 5px;
+        border: 0;
+
+        opacity: 80%
+    }
+    .album-soundcloud-embed {
+        width: 24rem;
+        height: 24rem;
+        padding: 0;
+        margin: 0;
+        grid-area: b;
+    }
+    .album-soundcloud-embed iframe {
+        width: 24rem;
+        height: 24rem;
 
         border-radius: 5px;
         border: 0;
@@ -92,7 +109,7 @@
     }
     .album-blurb {
         width: 100%;
-        max-height: 24rem;
+        max-height: 32rem;
         grid-area: c;
     }
     .album-buy-button {
@@ -120,7 +137,7 @@
     }
     .show-thumbnail {
         width: 10rem;
-        height: 13rem;
+        height: 12.5rem;
     }
     .show-thumbnail img {
         width: 10rem;
@@ -128,6 +145,7 @@
     }
     .show-thumbnail h2 {
         font-size: 1rem;
+        margin: .3rem 0rem;
     }
     
     /* contact form */
@@ -143,19 +161,19 @@
      * COMMON COMPONENTS
      */
     .button {
-        margin: .5rem;
+        margin: 1rem;
         padding: .5rem 1rem;
     }
     .button-small {
-        margin: .5rem;
+        margin: 1rem;
         padding: .5rem 1rem;
     }
     .primary-button {
-        margin: .5rem .5rem;
+        margin: 1rem;
         padding: .5rem 1rem;
     }
     .primary-button-small {
-        margin: .5rem .5rem;
+        margin: 1rem;
         padding: .5rem 1rem;
     }
 }

@@ -119,6 +119,16 @@
         width: 15rem;
         height: 30rem;
     }
+    .album-soundcloud-embed {
+        margin: 1rem 0rem;
+        
+        width: 15rem;
+        padding: 0;
+    }
+    .album-soundcloud-embed iframe {
+        width: 15rem;
+        height: 10rem;
+    }
 
     /* show */
     .section-show {
