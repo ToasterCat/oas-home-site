@@ -166,6 +166,7 @@ body {
 .footer {
     width: 100%;
     background-color: rgba(16,16,16, 0.4);
+    backdrop-filter: grayscale(50%) blur(5px);
     
     display: flex;
     flex-direction: column;
