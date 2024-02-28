@@ -27,6 +27,7 @@
     }
     #footer {
         min-height: 5rem;
+        margin-top: 2rem;
     }
     .footer {
         height: 5rem;
@@ -151,6 +152,9 @@
     /* contact form */
     .form-group {
         flex-direction: row;
+    }
+    input {
+        width: 14rem;
     }
     textarea {
         width: 25rem;

@@ -39,6 +39,7 @@
     /* footer */
     #footer {
         min-height: 6rem;
+        margin-top: 1.5rem;
     }
     .footer {
         height: 6rem;

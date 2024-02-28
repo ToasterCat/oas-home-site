@@ -707,6 +707,7 @@ input {
     background-color: transparent;
     color: var(--color-font);
     border-radius: 5px;
+    border: 1ps solid grey;
 
     font-size: var(--font-size);
     font-family: "Roboto";
@@ -720,7 +721,7 @@ textarea {
 
     background-color: transparent;
     color: lightgray;
-    border: border 1px solid white;
+    border: border 1px solid grey;
     border-radius: 5px;
 
     font-family: "Roboto";
